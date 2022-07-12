@@ -89,11 +89,81 @@ namespace csik
 
         private void otwórz_Click(object sender, EventArgs e)
         {
-            ScreenShot form = new ScreenShot(textBox1,textBox2,textBox3,textBox4,textBox5);
+            ScreenShot form = new ScreenShot(textBox1, textBox2, textBox3, textBox4, textBox5, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5);
             form.Show();
         }
 
+
         #endregion
 
+        private void imgButton1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+
+            if(open.ShowDialog() == DialogResult.OK)
+            {
+                picture1.Image = new Bitmap(open.FileName);
+
+                imgUrl1.Text = open.FileName;
+            }
+        }
+
+        private void imgButton2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picture2.Image = new Bitmap(open.FileName);
+
+                imgUrl2.Text = open.FileName;
+            }
+        }
+
+        private void imgButton3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picture3.Image = new Bitmap(open.FileName);
+
+                imgUrl3.Text = open.FileName;
+            }
+        }
+
+        private void imgButton4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picture4.Image = new Bitmap(open.FileName);
+
+                imgUrl4.Text = open.FileName;
+            }
+        }
+
+        private void imgButton5_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picture5.Image = new Bitmap(open.FileName);
+
+                imgUrl5.Text = open.FileName;
+            }
+        }
     }
 }

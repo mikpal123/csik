@@ -40,7 +40,17 @@
             this.yourPrice4 = new System.Windows.Forms.Label();
             this.yourPrice5 = new System.Windows.Forms.Label();
             this.price1 = new System.Windows.Forms.Label();
+            this.picture1 = new System.Windows.Forms.PictureBox();
+            this.picture2 = new System.Windows.Forms.PictureBox();
+            this.picture3 = new System.Windows.Forms.PictureBox();
+            this.picture4 = new System.Windows.Forms.PictureBox();
+            this.picture5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -164,11 +174,61 @@
             this.price1.TabIndex = 11;
             this.price1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // picture1
+            // 
+            this.picture1.Location = new System.Drawing.Point(12, 57);
+            this.picture1.Name = "picture1";
+            this.picture1.Size = new System.Drawing.Size(369, 770);
+            this.picture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture1.TabIndex = 13;
+            this.picture1.TabStop = false;
+            // 
+            // picture2
+            // 
+            this.picture2.Location = new System.Drawing.Point(396, 57);
+            this.picture2.Name = "picture2";
+            this.picture2.Size = new System.Drawing.Size(367, 770);
+            this.picture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture2.TabIndex = 14;
+            this.picture2.TabStop = false;
+            // 
+            // picture3
+            // 
+            this.picture3.Location = new System.Drawing.Point(778, 57);
+            this.picture3.Name = "picture3";
+            this.picture3.Size = new System.Drawing.Size(368, 770);
+            this.picture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture3.TabIndex = 15;
+            this.picture3.TabStop = false;
+            // 
+            // picture4
+            // 
+            this.picture4.Location = new System.Drawing.Point(1159, 57);
+            this.picture4.Name = "picture4";
+            this.picture4.Size = new System.Drawing.Size(367, 770);
+            this.picture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture4.TabIndex = 16;
+            this.picture4.TabStop = false;
+            // 
+            // picture5
+            // 
+            this.picture5.Location = new System.Drawing.Point(1542, 57);
+            this.picture5.Name = "picture5";
+            this.picture5.Size = new System.Drawing.Size(364, 770);
+            this.picture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture5.TabIndex = 17;
+            this.picture5.TabStop = false;
+            // 
             // ScreenShot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.picture5);
+            this.Controls.Add(this.picture4);
+            this.Controls.Add(this.picture3);
+            this.Controls.Add(this.picture2);
+            this.Controls.Add(this.picture1);
             this.Controls.Add(this.price1);
             this.Controls.Add(this.yourPrice5);
             this.Controls.Add(this.yourPrice4);
@@ -185,6 +245,11 @@
             this.Text = "ScreenShot";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +268,10 @@
         private System.Windows.Forms.Label yourPrice4;
         private System.Windows.Forms.Label yourPrice5;
         private System.Windows.Forms.Label price1;
+        private System.Windows.Forms.PictureBox picture1;
+        private System.Windows.Forms.PictureBox picture2;
+        private System.Windows.Forms.PictureBox picture3;
+        private System.Windows.Forms.PictureBox picture4;
+        private System.Windows.Forms.PictureBox picture5;
     }
 }
