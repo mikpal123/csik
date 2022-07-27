@@ -29,3 +29,4 @@ C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.csproj.CoreCompil
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.csproj.CopyComplete
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.exe
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.pdb
+C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.ss1366.resources

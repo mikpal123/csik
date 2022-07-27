@@ -30,6 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.imgButton5 = new System.Windows.Forms.Button();
+            this.imgButton4 = new System.Windows.Forms.Button();
+            this.imgButton3 = new System.Windows.Forms.Button();
+            this.imgButton2 = new System.Windows.Forms.Button();
+            this.imgUrl5 = new System.Windows.Forms.TextBox();
+            this.imgUrl4 = new System.Windows.Forms.TextBox();
+            this.imgUrl3 = new System.Windows.Forms.TextBox();
+            this.imgUrl2 = new System.Windows.Forms.TextBox();
             this.imgButton1 = new System.Windows.Forms.Button();
             this.imgUrl1 = new System.Windows.Forms.TextBox();
             this.otwórz = new System.Windows.Forms.Button();
@@ -44,6 +57,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.picture5 = new System.Windows.Forms.PictureBox();
+            this.picture4 = new System.Windows.Forms.PictureBox();
+            this.picture3 = new System.Windows.Forms.PictureBox();
+            this.picture2 = new System.Windows.Forms.PictureBox();
             this.picture1 = new System.Windows.Forms.PictureBox();
             this.yourPrice5 = new System.Windows.Forms.Label();
             this.yourPrice4 = new System.Windows.Forms.Label();
@@ -56,33 +73,17 @@
             this.price2 = new System.Windows.Forms.Label();
             this.price1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.imgUrl2 = new System.Windows.Forms.TextBox();
-            this.imgUrl3 = new System.Windows.Forms.TextBox();
-            this.imgUrl4 = new System.Windows.Forms.TextBox();
-            this.imgUrl5 = new System.Windows.Forms.TextBox();
-            this.imgButton2 = new System.Windows.Forms.Button();
-            this.imgButton3 = new System.Windows.Forms.Button();
-            this.imgButton4 = new System.Windows.Forms.Button();
-            this.imgButton5 = new System.Windows.Forms.Button();
-            this.picture2 = new System.Windows.Forms.PictureBox();
-            this.picture3 = new System.Windows.Forms.PictureBox();
-            this.picture4 = new System.Windows.Forms.PictureBox();
-            this.picture5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture5)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -94,6 +95,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.label10);
             this.splitContainer1.Panel1.Controls.Add(this.label9);
             this.splitContainer1.Panel1.Controls.Add(this.label8);
@@ -145,6 +147,124 @@
             this.splitContainer1.SplitterDistance = 463;
             this.splitContainer1.TabIndex = 0;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.Control;
+            this.label10.Location = new System.Drawing.Point(237, 199);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(105, 13);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Scieżka do zdjęcia 5";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.Control;
+            this.label9.Location = new System.Drawing.Point(237, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 13);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Scieżka do zdjęcia 4";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(237, 121);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Scieżka do zdjęcia 3";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(237, 81);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(105, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Scieżka do zdjęcia 2";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(237, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Scieżka do zdjęcia 1";
+            // 
+            // imgButton5
+            // 
+            this.imgButton5.Location = new System.Drawing.Point(397, 212);
+            this.imgButton5.Name = "imgButton5";
+            this.imgButton5.Size = new System.Drawing.Size(51, 23);
+            this.imgButton5.TabIndex = 21;
+            this.imgButton5.Text = "wybierz";
+            this.imgButton5.UseVisualStyleBackColor = true;
+            this.imgButton5.Click += new System.EventHandler(this.imgButton5_Click);
+            // 
+            // imgButton4
+            // 
+            this.imgButton4.Location = new System.Drawing.Point(397, 173);
+            this.imgButton4.Name = "imgButton4";
+            this.imgButton4.Size = new System.Drawing.Size(51, 23);
+            this.imgButton4.TabIndex = 20;
+            this.imgButton4.Text = "wybierz";
+            this.imgButton4.UseVisualStyleBackColor = true;
+            this.imgButton4.Click += new System.EventHandler(this.imgButton4_Click);
+            // 
+            // imgButton3
+            // 
+            this.imgButton3.Location = new System.Drawing.Point(397, 134);
+            this.imgButton3.Name = "imgButton3";
+            this.imgButton3.Size = new System.Drawing.Size(51, 23);
+            this.imgButton3.TabIndex = 19;
+            this.imgButton3.Text = "wybierz";
+            this.imgButton3.UseVisualStyleBackColor = true;
+            this.imgButton3.Click += new System.EventHandler(this.imgButton3_Click);
+            // 
+            // imgButton2
+            // 
+            this.imgButton2.Location = new System.Drawing.Point(397, 95);
+            this.imgButton2.Name = "imgButton2";
+            this.imgButton2.Size = new System.Drawing.Size(51, 23);
+            this.imgButton2.TabIndex = 18;
+            this.imgButton2.Text = "wybierz";
+            this.imgButton2.UseVisualStyleBackColor = true;
+            this.imgButton2.Click += new System.EventHandler(this.imgButton2_Click);
+            // 
+            // imgUrl5
+            // 
+            this.imgUrl5.Location = new System.Drawing.Point(240, 215);
+            this.imgUrl5.Name = "imgUrl5";
+            this.imgUrl5.Size = new System.Drawing.Size(151, 20);
+            this.imgUrl5.TabIndex = 17;
+            // 
+            // imgUrl4
+            // 
+            this.imgUrl4.Location = new System.Drawing.Point(240, 176);
+            this.imgUrl4.Name = "imgUrl4";
+            this.imgUrl4.Size = new System.Drawing.Size(151, 20);
+            this.imgUrl4.TabIndex = 16;
+            // 
+            // imgUrl3
+            // 
+            this.imgUrl3.Location = new System.Drawing.Point(240, 137);
+            this.imgUrl3.Name = "imgUrl3";
+            this.imgUrl3.Size = new System.Drawing.Size(151, 20);
+            this.imgUrl3.TabIndex = 15;
+            // 
+            // imgUrl2
+            // 
+            this.imgUrl2.Location = new System.Drawing.Point(240, 98);
+            this.imgUrl2.Name = "imgUrl2";
+            this.imgUrl2.Size = new System.Drawing.Size(151, 20);
+            this.imgUrl2.TabIndex = 14;
+            // 
             // imgButton1
             // 
             this.imgButton1.Location = new System.Drawing.Point(397, 57);
@@ -164,12 +284,12 @@
             // 
             // otwórz
             // 
-            this.otwórz.Location = new System.Drawing.Point(106, 277);
+            this.otwórz.Location = new System.Drawing.Point(13, 315);
             this.otwórz.Name = "otwórz";
-            this.otwórz.Size = new System.Drawing.Size(75, 23);
+            this.otwórz.Size = new System.Drawing.Size(113, 23);
             this.otwórz.TabIndex = 11;
             this.otwórz.Tag = "newWindowButton";
-            this.otwórz.Text = "otwórz";
+            this.otwórz.Text = "otwórz 1920x1080";
             this.otwórz.UseVisualStyleBackColor = true;
             this.otwórz.Click += new System.EventHandler(this.otwórz_Click);
             // 
@@ -268,6 +388,42 @@
             this.textBox1.Size = new System.Drawing.Size(222, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Tag = "item1";
+            // 
+            // picture5
+            // 
+            this.picture5.Location = new System.Drawing.Point(816, 38);
+            this.picture5.Name = "picture5";
+            this.picture5.Size = new System.Drawing.Size(195, 500);
+            this.picture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture5.TabIndex = 16;
+            this.picture5.TabStop = false;
+            // 
+            // picture4
+            // 
+            this.picture4.Location = new System.Drawing.Point(615, 38);
+            this.picture4.Name = "picture4";
+            this.picture4.Size = new System.Drawing.Size(195, 500);
+            this.picture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture4.TabIndex = 15;
+            this.picture4.TabStop = false;
+            // 
+            // picture3
+            // 
+            this.picture3.Location = new System.Drawing.Point(414, 38);
+            this.picture3.Name = "picture3";
+            this.picture3.Size = new System.Drawing.Size(195, 500);
+            this.picture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture3.TabIndex = 14;
+            this.picture3.TabStop = false;
+            // 
+            // picture2
+            // 
+            this.picture2.Location = new System.Drawing.Point(213, 38);
+            this.picture2.Name = "picture2";
+            this.picture2.Size = new System.Drawing.Size(195, 500);
+            this.picture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture2.TabIndex = 13;
+            this.picture2.TabStop = false;
             // 
             // picture1
             // 
@@ -395,159 +551,15 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // imgUrl2
+            // button1
             // 
-            this.imgUrl2.Location = new System.Drawing.Point(240, 98);
-            this.imgUrl2.Name = "imgUrl2";
-            this.imgUrl2.Size = new System.Drawing.Size(151, 20);
-            this.imgUrl2.TabIndex = 14;
-            // 
-            // imgUrl3
-            // 
-            this.imgUrl3.Location = new System.Drawing.Point(240, 137);
-            this.imgUrl3.Name = "imgUrl3";
-            this.imgUrl3.Size = new System.Drawing.Size(151, 20);
-            this.imgUrl3.TabIndex = 15;
-            // 
-            // imgUrl4
-            // 
-            this.imgUrl4.Location = new System.Drawing.Point(240, 176);
-            this.imgUrl4.Name = "imgUrl4";
-            this.imgUrl4.Size = new System.Drawing.Size(151, 20);
-            this.imgUrl4.TabIndex = 16;
-            // 
-            // imgUrl5
-            // 
-            this.imgUrl5.Location = new System.Drawing.Point(240, 215);
-            this.imgUrl5.Name = "imgUrl5";
-            this.imgUrl5.Size = new System.Drawing.Size(151, 20);
-            this.imgUrl5.TabIndex = 17;
-            // 
-            // imgButton2
-            // 
-            this.imgButton2.Location = new System.Drawing.Point(397, 95);
-            this.imgButton2.Name = "imgButton2";
-            this.imgButton2.Size = new System.Drawing.Size(51, 23);
-            this.imgButton2.TabIndex = 18;
-            this.imgButton2.Text = "wybierz";
-            this.imgButton2.UseVisualStyleBackColor = true;
-            this.imgButton2.Click += new System.EventHandler(this.imgButton2_Click);
-            // 
-            // imgButton3
-            // 
-            this.imgButton3.Location = new System.Drawing.Point(397, 134);
-            this.imgButton3.Name = "imgButton3";
-            this.imgButton3.Size = new System.Drawing.Size(51, 23);
-            this.imgButton3.TabIndex = 19;
-            this.imgButton3.Text = "wybierz";
-            this.imgButton3.UseVisualStyleBackColor = true;
-            this.imgButton3.Click += new System.EventHandler(this.imgButton3_Click);
-            // 
-            // imgButton4
-            // 
-            this.imgButton4.Location = new System.Drawing.Point(397, 173);
-            this.imgButton4.Name = "imgButton4";
-            this.imgButton4.Size = new System.Drawing.Size(51, 23);
-            this.imgButton4.TabIndex = 20;
-            this.imgButton4.Text = "wybierz";
-            this.imgButton4.UseVisualStyleBackColor = true;
-            this.imgButton4.Click += new System.EventHandler(this.imgButton4_Click);
-            // 
-            // imgButton5
-            // 
-            this.imgButton5.Location = new System.Drawing.Point(397, 212);
-            this.imgButton5.Name = "imgButton5";
-            this.imgButton5.Size = new System.Drawing.Size(51, 23);
-            this.imgButton5.TabIndex = 21;
-            this.imgButton5.Text = "wybierz";
-            this.imgButton5.UseVisualStyleBackColor = true;
-            this.imgButton5.Click += new System.EventHandler(this.imgButton5_Click);
-            // 
-            // picture2
-            // 
-            this.picture2.Location = new System.Drawing.Point(213, 38);
-            this.picture2.Name = "picture2";
-            this.picture2.Size = new System.Drawing.Size(195, 500);
-            this.picture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture2.TabIndex = 13;
-            this.picture2.TabStop = false;
-            // 
-            // picture3
-            // 
-            this.picture3.Location = new System.Drawing.Point(414, 38);
-            this.picture3.Name = "picture3";
-            this.picture3.Size = new System.Drawing.Size(195, 500);
-            this.picture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture3.TabIndex = 14;
-            this.picture3.TabStop = false;
-            // 
-            // picture4
-            // 
-            this.picture4.Location = new System.Drawing.Point(615, 38);
-            this.picture4.Name = "picture4";
-            this.picture4.Size = new System.Drawing.Size(195, 500);
-            this.picture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture4.TabIndex = 15;
-            this.picture4.TabStop = false;
-            // 
-            // picture5
-            // 
-            this.picture5.Location = new System.Drawing.Point(816, 38);
-            this.picture5.Name = "picture5";
-            this.picture5.Size = new System.Drawing.Size(195, 500);
-            this.picture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture5.TabIndex = 16;
-            this.picture5.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(237, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Scieżka do zdjęcia 1";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(237, 81);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 13);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Scieżka do zdjęcia 2";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(237, 121);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 13);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Scieżka do zdjęcia 3";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(237, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 13);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Scieżka do zdjęcia 4";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(237, 199);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 13);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Scieżka do zdjęcia 5";
+            this.button1.Location = new System.Drawing.Point(13, 345);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "otwórz 1366x768";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -562,12 +574,12 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picture5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -618,6 +630,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }
 

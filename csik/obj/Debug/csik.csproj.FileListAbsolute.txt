@@ -29,3 +29,4 @@ C:\Users\Mikolaj Palka\source\repos\csik\csik\bin\Debug\System.Threading.Tasks.E
 C:\Users\Mikolaj Palka\source\repos\csik\csik\bin\Debug\System.ValueTuple.xml
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Debug\csik.csproj.CopyComplete
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Debug\csik.ScreenShot.resources
+C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Debug\csik.ss1366.resources
