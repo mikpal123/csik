@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -73,7 +74,17 @@
             this.price2 = new System.Windows.Forms.Label();
             this.price1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.coustomPrice1 = new System.Windows.Forms.TextBox();
+            this.coustomPrice2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.coustomPrice3 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.coustomPrice4 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.coustomPrice5 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -95,6 +106,17 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.splitContainer1.Panel1.Controls.Add(this.label16);
+            this.splitContainer1.Panel1.Controls.Add(this.coustomPrice5);
+            this.splitContainer1.Panel1.Controls.Add(this.label15);
+            this.splitContainer1.Panel1.Controls.Add(this.coustomPrice4);
+            this.splitContainer1.Panel1.Controls.Add(this.label14);
+            this.splitContainer1.Panel1.Controls.Add(this.coustomPrice3);
+            this.splitContainer1.Panel1.Controls.Add(this.label13);
+            this.splitContainer1.Panel1.Controls.Add(this.coustomPrice2);
+            this.splitContainer1.Panel1.Controls.Add(this.label12);
+            this.splitContainer1.Panel1.Controls.Add(this.coustomPrice1);
+            this.splitContainer1.Panel1.Controls.Add(this.label11);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.label10);
             this.splitContainer1.Panel1.Controls.Add(this.label9);
@@ -146,6 +168,16 @@
             this.splitContainer1.Size = new System.Drawing.Size(1482, 759);
             this.splitContainer1.SplitterDistance = 463;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(335, 325);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "otwórz 1366x768";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
@@ -284,7 +316,7 @@
             // 
             // otwórz
             // 
-            this.otwórz.Location = new System.Drawing.Point(13, 315);
+            this.otwórz.Location = new System.Drawing.Point(335, 364);
             this.otwórz.Name = "otwórz";
             this.otwórz.Size = new System.Drawing.Size(113, 23);
             this.otwórz.TabIndex = 11;
@@ -295,7 +327,7 @@
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(13, 277);
+            this.submit.Location = new System.Drawing.Point(373, 286);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 10;
@@ -551,15 +583,99 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // label11
             // 
-            this.button1.Location = new System.Drawing.Point(13, 345);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "otwórz 1366x768";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.SystemColors.Control;
+            this.label11.Location = new System.Drawing.Point(9, 270);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Cena przedmiotu 1";
+            // 
+            // coustomPrice1
+            // 
+            this.coustomPrice1.Location = new System.Drawing.Point(12, 286);
+            this.coustomPrice1.Name = "coustomPrice1";
+            this.coustomPrice1.Size = new System.Drawing.Size(222, 20);
+            this.coustomPrice1.TabIndex = 29;
+            // 
+            // coustomPrice2
+            // 
+            this.coustomPrice2.Location = new System.Drawing.Point(12, 325);
+            this.coustomPrice2.Name = "coustomPrice2";
+            this.coustomPrice2.Size = new System.Drawing.Size(222, 20);
+            this.coustomPrice2.TabIndex = 31;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.SystemColors.Control;
+            this.label12.Location = new System.Drawing.Point(9, 309);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(95, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Cena przedmiotu 2";
+            // 
+            // coustomPrice3
+            // 
+            this.coustomPrice3.Location = new System.Drawing.Point(12, 364);
+            this.coustomPrice3.Name = "coustomPrice3";
+            this.coustomPrice3.Size = new System.Drawing.Size(222, 20);
+            this.coustomPrice3.TabIndex = 33;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.SystemColors.Control;
+            this.label13.Location = new System.Drawing.Point(9, 348);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(95, 13);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "Cena przedmiotu 3";
+            // 
+            // coustomPrice4
+            // 
+            this.coustomPrice4.Location = new System.Drawing.Point(12, 403);
+            this.coustomPrice4.Name = "coustomPrice4";
+            this.coustomPrice4.Size = new System.Drawing.Size(222, 20);
+            this.coustomPrice4.TabIndex = 35;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.Control;
+            this.label14.Location = new System.Drawing.Point(9, 387);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 13);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "Cena przedmiotu 4";
+            // 
+            // coustomPrice5
+            // 
+            this.coustomPrice5.Location = new System.Drawing.Point(12, 442);
+            this.coustomPrice5.Name = "coustomPrice5";
+            this.coustomPrice5.Size = new System.Drawing.Size(222, 20);
+            this.coustomPrice5.TabIndex = 37;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.Control;
+            this.label15.Location = new System.Drawing.Point(9, 426);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(95, 13);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "Cena przedmiotu 5";
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.SystemColors.Control;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.Location = new System.Drawing.Point(14, 251);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(434, 5);
+            this.label16.TabIndex = 38;
             // 
             // Form1
             // 
@@ -631,6 +747,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox coustomPrice5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox coustomPrice4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox coustomPrice3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox coustomPrice2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox coustomPrice1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
     }
 }
 

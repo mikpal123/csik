@@ -214,7 +214,7 @@
             // 
             this.picture5.Location = new System.Drawing.Point(1542, 57);
             this.picture5.Name = "picture5";
-            this.picture5.Size = new System.Drawing.Size(364, 770);
+            this.picture5.Size = new System.Drawing.Size(371, 770);
             this.picture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture5.TabIndex = 17;
             this.picture5.TabStop = false;

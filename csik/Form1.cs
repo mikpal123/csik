@@ -25,27 +25,27 @@ namespace csik
         {
             if(!string.IsNullOrEmpty(textBox1.Text))
             {
-                ChangeItem(textBox1, price1, yourPrice1);
+                ChangeItem(textBox1, price1, yourPrice1,coustomPrice1);                            
             }
             if (!string.IsNullOrEmpty(textBox2.Text))
             {
-                ChangeItem(textBox2, price2, yourPrice2);
+                ChangeItem(textBox2, price2, yourPrice2, coustomPrice2);
             }
             if (!string.IsNullOrEmpty(textBox3.Text))
             {
-                ChangeItem(textBox3, price3, yourPrice3);
+                ChangeItem(textBox3, price3, yourPrice3,coustomPrice3);
             }
             if (!string.IsNullOrEmpty(textBox4.Text))
             {
-                ChangeItem(textBox4, price4, yourPrice4);
+                ChangeItem(textBox4, price4, yourPrice4,coustomPrice4);
             }
             if (!string.IsNullOrEmpty(textBox5.Text))
             {
-                ChangeItem(textBox5, price5, yourPrice5);
+                ChangeItem(textBox5, price5, yourPrice5,coustomPrice5);
             }
         }
 
-        private void ChangeItem(TextBox name, Label price, Label yourPrice)
+        private void ChangeItem(TextBox name, Label price, Label yourPrice, TextBox coustomPrice)
         {
             RestCient rClient = new RestCient();
             rClient.endPoint = name.Text;
@@ -65,9 +65,18 @@ namespace csik
                 int intVal = (int)val;
                 price.Text = intVal.ToString();
 
-                val = Convert.ToSingle(item.lowest_price) * 0.7f;
-                intVal = (int)val;
-                yourPrice.Text = intVal.ToString();
+
+                if (string.IsNullOrEmpty(coustomPrice.Text))
+                {
+                    val = Convert.ToSingle(item.lowest_price) * 0.7f;
+                    intVal = (int)val;
+                    yourPrice.Text = intVal.ToString();
+                }
+                else
+                {
+                    yourPrice.Text = coustomPrice.Text;
+                }
+                
             }
             else
             {
@@ -168,7 +177,8 @@ namespace csik
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ss1366 form = new ss1366(textBox1, textBox2, textBox3, textBox4, textBox5, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5);
+            ss1366 form = new ss1366(textBox1, textBox2, textBox3, textBox4, textBox5, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, 
+                coustomPrice1, coustomPrice2, coustomPrice3, coustomPrice4, coustomPrice5);
             form.Show();
         }
     }
