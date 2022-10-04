@@ -96,11 +96,7 @@ namespace csik
             }
         }
 
-        private void otwórz_Click(object sender, EventArgs e)
-        {
-            ScreenShot form = new ScreenShot(textBox1, textBox2, textBox3, textBox4, textBox5, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5);
-            form.Show();
-        }
+       
 
 
         #endregion
@@ -174,7 +170,12 @@ namespace csik
                 imgUrl5.Text = open.FileName;
             }
         }
-
+        private void otwórz_Click(object sender, EventArgs e)
+        {
+            ScreenShot form = new ScreenShot(textBox1, textBox2, textBox3, textBox4, textBox5, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5,
+                coustomPrice1, coustomPrice2, coustomPrice3, coustomPrice4, coustomPrice5);
+            form.Show();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             ss1366 form = new ss1366(textBox1, textBox2, textBox3, textBox4, textBox5, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, 

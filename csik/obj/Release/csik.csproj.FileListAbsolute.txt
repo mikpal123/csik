@@ -24,9 +24,9 @@ C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.csproj.SuggestedB
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.Form1.resources
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.Properties.Resources.resources
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.ScreenShot.resources
+C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.ss1366.resources
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.csproj.GenerateResource.cache
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.csproj.CoreCompileInputs.cache
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.csproj.CopyComplete
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.exe
 C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.pdb
-C:\Users\Mikolaj Palka\source\repos\csik\csik\obj\Release\csik.ss1366.resources

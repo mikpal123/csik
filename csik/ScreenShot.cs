@@ -15,7 +15,9 @@ namespace csik
     public partial class ScreenShot : Form
     {
         TextBox text1, text2, text3, text4, text5, imgText1, imgText2, imgText3, imgText4, imgText5;
-        public ScreenShot(TextBox _text1, TextBox _text2, TextBox _text3, TextBox _text4, TextBox _text5, TextBox _imgText1, TextBox _imgText2, TextBox _imgText3, TextBox _imgText4, TextBox _imgText5)
+        public ScreenShot(TextBox _text1, TextBox _text2, TextBox _text3, TextBox _text4, TextBox _text5, TextBox _imgText1, TextBox _imgText2,
+            TextBox _imgText3, TextBox _imgText4, TextBox _imgText5, TextBox _coustomPrice1, TextBox _coustomPrice2, TextBox _coustomPrice3,
+            TextBox _coustomPrice4, TextBox _coustomPrice5)
         {
             InitializeComponent();
             this.text1 = _text1;
@@ -30,7 +32,7 @@ namespace csik
             this.imgText5 = _imgText5;
             if (!string.IsNullOrEmpty(text1.Text))
             {
-                ChangeItem(text1, price1, yourPrice1);
+                ChangeItem(text1, price1, yourPrice1, _coustomPrice1);
 
                 if (!string.IsNullOrEmpty(imgText1.Text))
                 {
@@ -39,7 +41,7 @@ namespace csik
             }
             if (!string.IsNullOrEmpty(text2.Text))
             {
-                ChangeItem(text2, price2, yourPrice2);
+                ChangeItem(text2, price2, yourPrice2, _coustomPrice2);
 
                 if (!string.IsNullOrEmpty(imgText2.Text))
                 {
@@ -48,7 +50,7 @@ namespace csik
             }
             if (!string.IsNullOrEmpty(text3.Text))
             {
-                ChangeItem(text3, price3, yourPrice3);
+                ChangeItem(text3, price3, yourPrice3, _coustomPrice3);
 
                 if (!string.IsNullOrEmpty(imgText3.Text))
                 {
@@ -57,7 +59,7 @@ namespace csik
             }
             if (!string.IsNullOrEmpty(text4.Text))
             {
-                ChangeItem(text4, price4, yourPrice4);
+                ChangeItem(text4, price4, yourPrice4, _coustomPrice4);
                 if (!string.IsNullOrEmpty(imgText4.Text))
                 {
                     ChangeImg(picture4, imgText4);
@@ -65,7 +67,7 @@ namespace csik
             }
             if (!string.IsNullOrEmpty(text5.Text))
             {
-                ChangeItem(text5, price5, yourPrice5);
+                ChangeItem(text5, price5, yourPrice5, _coustomPrice5);
 
                 if (!string.IsNullOrEmpty(imgText5.Text))
                 {
@@ -77,28 +79,44 @@ namespace csik
 
 
         #region UiHandlers
- 
 
-        private void ChangeItem(TextBox name, Label price, Label yourPrice)
+
+        private void ChangeItem(TextBox name, Label price, Label yourPrice, TextBox coustomPrice)
         {
             RestCient rClient = new RestCient();
             rClient.endPoint = name.Text;
-
 
             string strJSON = string.Empty;
             strJSON = rClient.makeRequest();
 
             Item item = JsonSerializer.Deserialize<Item>(rClient.makeRequest());
-            item.itemName = name.Text;
-            item.deleteZl();
+            if (item.lowest_price != null)
+            {
+                name.BackColor = Color.White;
+                item.itemName = name.Text;
+                item.deleteZl();
 
-            float val = Convert.ToSingle(item.lowest_price);
-            int intVal = (int)val;
-            price.Text = intVal.ToString();
+                float val = Convert.ToSingle(item.lowest_price);
+                int intVal = (int)val;
+                price.Text = intVal.ToString();
 
-            val = Convert.ToSingle(item.lowest_price) * 0.7f;
-            intVal = (int)val;
-            yourPrice.Text = intVal.ToString();
+
+                if (string.IsNullOrEmpty(coustomPrice.Text))
+                {
+                    val = Convert.ToSingle(item.lowest_price) * 0.7f;
+                    intVal = (int)val;
+                    yourPrice.Text = intVal.ToString();
+                }
+                else
+                {
+                    yourPrice.Text = coustomPrice.Text;
+                }
+
+            }
+            else
+            {
+                name.BackColor = Color.Red;
+            }
         }
 
         private void ChangeImg(PictureBox pictureBox, TextBox text)
